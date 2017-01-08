@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 export default {
-  devtools: 'eval-source-map',
+  devtool: 'source-map',
 
   entry: [
     'webpack-hot-middleware/client?reload=true',
