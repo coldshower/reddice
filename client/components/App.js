@@ -1,7 +1,17 @@
-// import React from 'react';
+import React from 'react';
+import Greetings from './Greetings';
+import NavBar from './NavBar';
 
-// export default () => {
-//   return (
-//     <h1>Hey there</h1>
-//   );
-// }
+class App extends React.Component {
+
+  render () {
+    return (
+      <div className="container">
+        <NavBar />
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+export default App;
